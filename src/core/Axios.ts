@@ -58,8 +58,8 @@ export default class Axios {
       // 通过 promise.then 链式调用
       promise = promise.then(resolved, rejected)
     }
-
-    return dispatchRequest(config)
+    return promise
+    // return dispatchRequest(config)
   }
 
   get(url: string, config?: AxiosRequestConfig): AxiosPromise {
