@@ -1425,6 +1425,11 @@
   resolved "http://10.0.0.208:4873/@types%2fparse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha1-L4u0QUNNFjs1+4/9zNcTiSf/uMA=
 
+"@types/qs@^6.5.3":
+  version "6.9.7"
+  resolved "http://10.0.0.208:4873/@types%2fqs/-/qs-6.9.7.tgz#63bb7d067db107cc1e457c303bc25d511febf6cb"
+  integrity sha1-Y7t9Bn2xB8weRXwwO8JdUR/r9ss=
+
 "@types/retry@0.12.0":
   version "0.12.0"
   resolved "http://10.0.0.208:4873/@types%2fretry/-/retry-0.12.0.tgz#2b35eccfcee7d38cd72ad99232fbd58bffb3c84d"
@@ -8708,7 +8713,7 @@ qrcode-terminal@^0.12.0:
   resolved "http://10.0.0.208:4873/qrcode-terminal/-/qrcode-terminal-0.12.0.tgz#bb5b699ef7f9f0505092a3748be4464fe71b5819"
   integrity sha512-EXtzRZmC+YGmGlDFbXKxQiMZNwCLEO6BANKXG4iCtSIM0yqc/pappSx3RIKr4r0uh5JsBckOXeKrB3Iz7mdQpQ==
 
-qs@6.11.0:
+qs@6.11.0, qs@^6.7.0:
   version "6.11.0"
   resolved "http://10.0.0.208:4873/qs/-/qs-6.11.0.tgz#fd0d963446f7a65e1367e01abd85429453f0c37a"
   integrity sha512-MvjoMCJwEarSbUYk5O+nmoSzSutSsTwF85zcHPQ9OrlFoZOYIjaqBAJIqIXjptyD5vThxGq52Xu/MaJzRkIk4Q==
