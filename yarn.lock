@@ -1420,6 +1420,11 @@
   resolved "http://10.0.0.208:4873/@types%2fnormalize-package-data/-/normalize-package-data-2.4.1.tgz#d3357479a0fdfdd5907fe67e17e0a85c906e1301"
   integrity sha1-0zV0eaD9/dWQf+Z+F+CoXJBuEwE=
 
+"@types/nprogress@0.0.29":
+  version "0.0.29"
+  resolved "http://10.0.0.208:4873/@types%2fnprogress/-/nprogress-0.0.29.tgz#060bd510022a005f1840234030d3132fb9195471"
+  integrity sha1-BgvVEAIqAF8YQCNAMNMTL7kZVHE=
+
 "@types/parse-json@^4.0.0":
   version "4.0.0"
   resolved "http://10.0.0.208:4873/@types%2fparse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
@@ -2641,7 +2646,7 @@ camelcase@^4.0.0, camelcase@^4.1.0:
   resolved "http://10.0.0.208:4873/camelcase/-/camelcase-4.1.0.tgz#d545635be1e33c542649c69173e5de6acfae34dd"
   integrity sha1-1UVjW+HjPFQmScaRc+Xeas+uNN0=
 
-camelcase@^5.0.0, camelcase@^5.3.1:
+camelcase@^5.0.0, camelcase@^5.2.0, camelcase@^5.3.1:
   version "5.3.1"
   resolved "http://10.0.0.208:4873/camelcase/-/camelcase-5.3.1.tgz#e3c9b31569e106811df242f715725a1f4c494320"
   integrity sha1-48mzFWnhBoEd8kL3FXJaH0xJQyA=
@@ -3356,6 +3361,28 @@ crypto-random-string@^1.0.0:
   version "1.0.0"
   resolved "http://10.0.0.208:4873/crypto-random-string/-/crypto-random-string-1.0.0.tgz#a230f64f568310e1498009940790ec99545bca7e"
   integrity sha1-ojD2T1aDEOFJgAmUB5DsmVRbyn4=
+
+css-loader@^2.1.1:
+  version "2.1.1"
+  resolved "http://10.0.0.208:4873/css-loader/-/css-loader-2.1.1.tgz#d8254f72e412bb2238bb44dd674ffbef497333ea"
+  integrity sha1-2CVPcuQSuyI4u0TdZ0/770lzM+o=
+  dependencies:
+    camelcase "^5.2.0"
+    icss-utils "^4.1.0"
+    loader-utils "^1.2.3"
+    normalize-path "^3.0.0"
+    postcss "^7.0.14"
+    postcss-modules-extract-imports "^2.0.0"
+    postcss-modules-local-by-default "^2.0.6"
+    postcss-modules-scope "^2.1.0"
+    postcss-modules-values "^2.0.0"
+    postcss-value-parser "^3.3.0"
+    schema-utils "^1.0.0"
+
+cssesc@^3.0.0:
+  version "3.0.0"
+  resolved "http://10.0.0.208:4873/cssesc/-/cssesc-3.0.0.tgz#37741919903b868565e1c09ea747445cd18983ee"
+  integrity sha1-N3QZGZA7hoVl4cCep0dEXNGJg+4=
 
 cssom@0.3.x, "cssom@>= 0.3.2 < 0.4.0":
   version "0.3.8"
@@ -5221,6 +5248,18 @@ iconv-lite@^0.6.2:
   dependencies:
     safer-buffer ">= 2.1.2 < 3.0.0"
 
+icss-replace-symbols@^1.1.0:
+  version "1.1.0"
+  resolved "http://10.0.0.208:4873/icss-replace-symbols/-/icss-replace-symbols-1.1.0.tgz#06ea6f83679a7749e386cfe1fe812ae5db223ded"
+  integrity sha1-Bupvg2ead0njhs/h/oEq5dsiPe0=
+
+icss-utils@^4.1.0:
+  version "4.1.1"
+  resolved "http://10.0.0.208:4873/icss-utils/-/icss-utils-4.1.1.tgz#21170b53789ee27447c2f47dd683081403f9a467"
+  integrity sha1-IRcLU3ie4nRHwvR91oMIFAP5pGc=
+  dependencies:
+    postcss "^7.0.14"
+
 ieee754@^1.1.4:
   version "1.2.1"
   resolved "http://10.0.0.208:4873/ieee754/-/ieee754-1.2.1.tgz#8eb7a10a63fff25d15a57b001586d177d1b0d352"
@@ -6727,7 +6766,7 @@ loader-runner@^2.4.0:
   resolved "http://10.0.0.208:4873/loader-runner/-/loader-runner-2.4.0.tgz#ed47066bfe534d7e84c4c7b9998c2a75607d9357"
   integrity sha1-7UcGa/5TTX6ExMe5mYwqdWB9k1c=
 
-loader-utils@^1.0.2, loader-utils@^1.2.3:
+loader-utils@^1.0.2, loader-utils@^1.1.0, loader-utils@^1.2.3:
   version "1.4.2"
   resolved "http://10.0.0.208:4873/loader-utils/-/loader-utils-1.4.2.tgz#29a957f3a63973883eb684f10ffd3d151fec01a3"
   integrity sha512-I5d00Pd/jwMD2QCduo657+YM/6L3KZu++pmX9VFncxaxvHcru9jx1lBaFft+r4Mt2jK0Yhp41XlRAihzPxHNCg==
@@ -7921,6 +7960,11 @@ npmlog@^4.1.2, npmlog@~4.1.2:
     gauge "~2.7.3"
     set-blocking "~2.0.0"
 
+nprogress@^0.2.0:
+  version "0.2.0"
+  resolved "http://10.0.0.208:4873/nprogress/-/nprogress-0.2.0.tgz#cb8f34c53213d895723fcbab907e9422adbcafb1"
+  integrity sha1-y480xTIT2JVyP8urkH6UIq28r7E=
+
 number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "http://10.0.0.208:4873/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
@@ -8438,6 +8482,11 @@ performance-now@^2.1.0:
   resolved "http://10.0.0.208:4873/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
   integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
 
+picocolors@^0.2.1:
+  version "0.2.1"
+  resolved "http://10.0.0.208:4873/picocolors/-/picocolors-0.2.1.tgz#570670f793646851d1ba135996962abad587859f"
+  integrity sha1-VwZw95NkaFHRuhNZlpYqutWHhZ8=
+
 picocolors@^1.0.0:
   version "1.0.0"
   resolved "http://10.0.0.208:4873/picocolors/-/picocolors-1.0.0.tgz#cb5bdc74ff3f51892236eaf79d68bc44564ab81c"
@@ -8518,6 +8567,59 @@ posix-character-classes@^0.1.0:
   version "0.1.1"
   resolved "http://10.0.0.208:4873/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
   integrity sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=
+
+postcss-modules-extract-imports@^2.0.0:
+  version "2.0.0"
+  resolved "http://10.0.0.208:4873/postcss-modules-extract-imports/-/postcss-modules-extract-imports-2.0.0.tgz#818719a1ae1da325f9832446b01136eeb493cd7e"
+  integrity sha1-gYcZoa4doyX5gyRGsBE27rSTzX4=
+  dependencies:
+    postcss "^7.0.5"
+
+postcss-modules-local-by-default@^2.0.6:
+  version "2.0.6"
+  resolved "http://10.0.0.208:4873/postcss-modules-local-by-default/-/postcss-modules-local-by-default-2.0.6.tgz#dd9953f6dd476b5fd1ef2d8830c8929760b56e63"
+  integrity sha1-3ZlT9t1Ha1/R7y2IMMiSl2C1bmM=
+  dependencies:
+    postcss "^7.0.6"
+    postcss-selector-parser "^6.0.0"
+    postcss-value-parser "^3.3.1"
+
+postcss-modules-scope@^2.1.0:
+  version "2.2.0"
+  resolved "http://10.0.0.208:4873/postcss-modules-scope/-/postcss-modules-scope-2.2.0.tgz#385cae013cc7743f5a7d7602d1073a89eaae62ee"
+  integrity sha1-OFyuATzHdD9afXYC0Qc6iequYu4=
+  dependencies:
+    postcss "^7.0.6"
+    postcss-selector-parser "^6.0.0"
+
+postcss-modules-values@^2.0.0:
+  version "2.0.0"
+  resolved "http://10.0.0.208:4873/postcss-modules-values/-/postcss-modules-values-2.0.0.tgz#479b46dc0c5ca3dc7fa5270851836b9ec7152f64"
+  integrity sha1-R5tG3Axco9x/pScIUYNrnscVL2Q=
+  dependencies:
+    icss-replace-symbols "^1.1.0"
+    postcss "^7.0.6"
+
+postcss-selector-parser@^6.0.0:
+  version "6.0.11"
+  resolved "http://10.0.0.208:4873/postcss-selector-parser/-/postcss-selector-parser-6.0.11.tgz#2e41dc39b7ad74046e1615185185cd0b17d0c8dc"
+  integrity sha512-zbARubNdogI9j7WY4nQJBiNqQf3sLS3wCP4WfOidu+p28LofJqDH1tcXypGrcmMHhDk2t9wGhCsYe/+szLTy1g==
+  dependencies:
+    cssesc "^3.0.0"
+    util-deprecate "^1.0.2"
+
+postcss-value-parser@^3.3.0, postcss-value-parser@^3.3.1:
+  version "3.3.1"
+  resolved "http://10.0.0.208:4873/postcss-value-parser/-/postcss-value-parser-3.3.1.tgz#9ff822547e2893213cf1c30efa51ac5fd1ba8281"
+  integrity sha1-n/giVH4okyE88cMO+lGsX9G6goE=
+
+postcss@^7.0.14, postcss@^7.0.5, postcss@^7.0.6:
+  version "7.0.39"
+  resolved "http://10.0.0.208:4873/postcss/-/postcss-7.0.39.tgz#9624375d965630e2e1f2c02a935c82a59cb48309"
+  integrity sha1-liQ3XZZWMOLh8sAqk1yCpZy0gwk=
+  dependencies:
+    picocolors "^0.2.1"
+    source-map "^0.6.1"
 
 prelude-ls@~1.1.2:
   version "1.1.2"
@@ -10245,6 +10347,14 @@ strip-json-comments@2.0.1, strip-json-comments@~2.0.1:
   resolved "http://10.0.0.208:4873/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
 
+style-loader@^0.23.1:
+  version "0.23.1"
+  resolved "http://10.0.0.208:4873/style-loader/-/style-loader-0.23.1.tgz#cb9154606f3e771ab6c4ab637026a1049174d925"
+  integrity sha1-y5FUYG8+dxq2xKtjcCahBJF02SU=
+  dependencies:
+    loader-utils "^1.1.0"
+    schema-utils "^1.0.0"
+
 supports-color@^2.0.0:
   version "2.0.0"
   resolved "http://10.0.0.208:4873/supports-color/-/supports-color-2.0.0.tgz#535d045ce6b6363fa40117084629995e9df324c7"
@@ -10969,7 +11079,7 @@ use@^3.1.0:
   resolved "http://10.0.0.208:4873/use/-/use-3.1.1.tgz#d50c8cac79a19fbc20f2911f56eb973f4e10070f"
   integrity sha1-1QyMrHmhn7wg8pEfVuuXP04QBw8=
 
-util-deprecate@^1.0.1, util-deprecate@~1.0.1:
+util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "http://10.0.0.208:4873/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=

@@ -9,6 +9,10 @@ const defaults: AxiosRequestConfig = {
       Accept: 'application/json, text/plain, */*'
     }
   },
+  // token 对应 cookie 名称
+  xsrfCookieName: 'XSRF-TOKEN',
+  // header 中的 token 对应的 header 名称
+  xxrfHeaderName: 'X-XSRF-TOKEN',
   // 请求数据默认配置
   transformRequest: [
     function(data: any, headers: any): any {
@@ -21,7 +25,10 @@ const defaults: AxiosRequestConfig = {
     function(data: any): any {
       return transformResponse(data)
     }
-  ]
+  ],
+  validateStatus(status: number): boolean {
+    return status >= 200 && status < 300
+  }
 }
 const methodNoData = ['delete', 'get', 'head', 'options']
 methodNoData.forEach(method => {

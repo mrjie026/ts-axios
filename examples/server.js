@@ -196,6 +196,12 @@ function registerMoreRouter() {
     res.json(req.cookies)
   })
 
+  const multipart = require('connect-multiparty')
+  app.use(
+    multipart({
+      uploadDir: path.resolve(__dirname, 'upload-file')
+    })
+  )
   router.post('/more/upload', function(req, res) {
     console.log(req.body, req.files)
     res.end('upload success!')
@@ -203,6 +209,7 @@ function registerMoreRouter() {
 
   router.post('/more/post', function(req, res) {
     const auth = req.headers.authorization
+    console.log('type, credentials ', type, credentials, auth)
     const [type, credentials] = auth.split(' ')
     console.log(atob(credentials))
     const [username, password] = atob(credentials).split(':')
